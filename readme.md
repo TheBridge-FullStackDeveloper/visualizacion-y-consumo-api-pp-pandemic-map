@@ -4,55 +4,62 @@
 
 ## Introducción ##
 
-En plena expansión del coronavirus conocido como COVID-19 te toca crear un mapa informativo para hacer saber al personal dónde no pueden acercarse durante la cuarentena:
+En plena expansión del coronavirus conocido como COVID-19 te toca crear un mapa informativo para hacer saber al personal dónde no pueden acercarse durante la cuarentena.
+
+![quarantine]
 
 ## Requisitos ##
 
 - Precurso Web
 - Programación avanzada
-- Leaflet
+- [Leaflet]
+
 
 ## Iteraciones ##
 
-#### Dia 1
+Tendrías que haber conseguido realizar la [plantilla HTML5 con linters] y tener tu base a utilizar durante la semana. Si no has terminado, te animo a que uses la [plantilla HTML5 con linters de TheBridge] y así poder seguir el ritmo diario.
 
-En plena expansión del coronavirus conocido como COVID-19 te toca crear un mapa informativo para hacer saber al personal dónde no pueden acercarse durante la cuarentena:
+![virus1]
 
-##### Marcadores
+### Martes ###
 
-Crea un mapa con los siguientes marcadores:
+1. Crea un mapa con los marcadores de las siguientes escuelas:
 - The Bridge
 - KeepCoding
 - Neoland
 - Upgrade Hub
 - Ironhack
 
-###### Popups
+  El conjunto de escuelas será una colección, así que cada una de ellas será un objeto, con todos los datos relevantes que se necesiten.
 
-Los marcadores han de tener popups personalizados para cada escuela
+2. Crea un área de aislamiento en forma de círculo alrededor de cada escuela. Será para todas las escuelas del mismo tamaño.
 
-###### Eventos
+3. Cada escuela tendrá su "popup" o burbuja con la información de cada escuela. Al menos, su nombre.
 
-Si el usuario hace "click" sobre el mapa, en un lugar que no sea una escuela, se mostrará por consola el siguiente mensaje: "Latitud: ${}, longitud: ${}".
+4. Crea un polígono que una todas las escuelas.
 
-###### Áreas de aislamiento
+![virus2]
 
-Debes pintar un área de aislamiento para cada escuela, con forma de círculo
+### Miércoles ###
 
-###### El polígono
+5. Personaliza el marcador de cada una de las escuelas con su logotipo.
 
-Crea un polígono que una todas las escuelas
+6. Haz posible una gestión de capas, donde podamos alternar la visibilidad del círculo o el polígono.
 
-#### Día 2
+7. Añade otra capa de estilo de mapa alternativo, para así poder cambiar.
 
-Una vez sacado nuestro "mínimo producto viable" ("mvp" en inglés), hoy se nos pide añadir más funcionalidades al mapa:
+*Premium*
 
-##### Marcadores personalizados
+Haz que el área de aislamiento de cada escuela tenga un color distinto para cada una de ellas, aunque mantenga el mismo tamaño. Extiende cada uno de los marcadores para ello.
 
-Añade los logotipos de cada una de las escuelas en sustitución de los marcadores ordinarios.
+El tamaño de dicha área no debe ser definido más que una vez.
 
-##### Capas
+[Leaflet]: https://leafletjs.com "Leaflet"
+[plantilla HTML5 con linters]: https://github.com/TheBridge-FullStackDeveloper/visualizacion-y-consumo-api-pp-template "HTML5 template with linters"
+[plantilla HTML5 con linters de TheBridge]: https://github.com/TheBridge-FullStackDeveloper/template-html5-linter "template-html5-linter"
 
-Añade un controlador donde poder controlar la visibilidad de las escuelas, los circulos y el polígono.
+[quarantine]: quarantine.jpg "Quarantine sign"
 
-Añade otra capa de estilo de mapa alternativo, para así poder alternar.
+[virus1]: virus1.gif "virus image 1"
+[virus2]: virus2.gif "virus image 2"
+[virus3]: virus3.gif "virus image 3"
